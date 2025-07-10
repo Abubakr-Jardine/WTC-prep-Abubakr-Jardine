@@ -1,5 +1,4 @@
-def mediatype():
-    file = input()
+def mediatype(file):
     list_of_types = ["gif","jpg","jpeg","png","pdf","txt","zip"]
     file = file.strip().lower()
 
@@ -14,5 +13,6 @@ def mediatype():
             else:
                 return "application/octet-stream"
 
+file = input()
 
-print(mediatype())
+print(mediatype(file))
