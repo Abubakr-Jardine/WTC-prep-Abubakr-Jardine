@@ -6,8 +6,13 @@ def mediatype():
     for type in list_of_types:
         if type in file[-5:]:
             if type == "txt":
-                return f"plain{type}"
-            elif type == 
+                return f"plain/{type}"
+            elif type == "pdf" or type == "zip":
+                return f"application/{type}"
+            elif type in "gif jpg jpeg png":
+                return f"image/{type}"
+            else:
+                return "application/octet-stream"
 
 
 print(mediatype())
