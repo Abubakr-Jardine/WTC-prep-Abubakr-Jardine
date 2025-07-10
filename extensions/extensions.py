@@ -4,6 +4,8 @@ def mediatype(file):
 
     for type in list_of_types:
         if type in file[-5:]:
-            print("yes")
+            
+
 
 mediatype("jnvdksajvnijvfi.jpg")
+
