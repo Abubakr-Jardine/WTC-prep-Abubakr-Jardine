@@ -5,7 +5,7 @@ def mediatype():
 
     for type in list_of_types:
         if type in file[-5:]:
-            return f"image/{type}"
+            if type == 
 
 
-mediatype()
+print(mediatype())
