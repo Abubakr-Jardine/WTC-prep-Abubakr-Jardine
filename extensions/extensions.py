@@ -5,7 +5,9 @@ def mediatype():
 
     for type in list_of_types:
         if type in file[-5:]:
-            if type == 
+            if type == "txt":
+                return f"plain{type}"
+            elif type == 
 
 
 print(mediatype())
