@@ -3,7 +3,7 @@ def mediatype(file):
     file = file.strip().lower()
 
     for type in list_of_types:
-        if type in file[0:5:-1]:
+        if type in file[-5:-1]:
             print("yes")
 
 mediatype("jnvdksajvnijvfi.jpg")
