@@ -1,4 +1,8 @@
 greet = input("Greeting: ")
 greet =greet.strip().lower()
-if "hello" in greet[0:4]:
+if greet[0:5] == "hello":
     print("$0")
+elif greet[0:1] == "h":
+    print("$20")
+else:
+    print("$100")
